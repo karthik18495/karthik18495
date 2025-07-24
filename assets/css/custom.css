@@ -1,0 +1,161 @@
+/* Custom styles for Physics × Data Science portfolio */
+
+/* Custom list styles for feature lists */
+.features-list {
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.features-list li {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.features-list li:before {
+    content: "▶";
+    color: #6cc04a;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Actions list for collaboration links */
+.actions-list {
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.actions-list li {
+    margin: 0.5em 0;
+}
+
+/* Enhanced intro section with gradient background */
+#intro {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+#intro h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+#intro h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/* Physics-themed accent colors */
+.wrapper.style2 {
+    background-color: #f8f9fa;
+}
+
+.wrapper.style3 {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+.wrapper.style3 h2,
+.wrapper.style3 h3 {
+    color: white;
+}
+
+/* Enhanced project sections */
+.spotlights section .content .inner h2 {
+    color: #2a5298;
+    border-bottom: 2px solid #6cc04a;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Skills section icons with physics theme */
+.features section .icon.major {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+}
+
+/* Contact section with subtle animation */
+#contact {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+}
+
+#contact h2,
+#contact h3 {
+    color: white;
+}
+
+#contact .contact li:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Footer with physics theme */
+#footer {
+    background: #1a1a2e;
+    border-top: 3px solid #6cc04a;
+}
+
+/* Responsive typography improvements */
+@media screen and (max-width: 736px) {
+    #intro h1 {
+        font-size: 2.5em;
+    }
+    
+    #intro h2 {
+        font-size: 1.4em;
+    }
+}
+
+/* Smooth scrolling enhancement */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add subtle animations */
+.features section,
+.spotlights section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Button enhancements */
+.button.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.button.primary:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Physics symbols and mathematical typography */
+.math-symbol {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/* Loading animation for better UX */
+.is-preload #intro {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+body:not(.is-preload) #intro {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
