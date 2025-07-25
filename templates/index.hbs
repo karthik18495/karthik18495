@@ -6,10 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Karthik Suresh - Physics & Data Science</title>
+		<title>{{intro.title}} - Physics & Data Science</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Karthik Suresh - Postdoctoral Research Associate working at the intersection of Physics, AI, and High Performance Computing" />
+		<meta name="description" content="{{intro.title}} - Postdoctoral Research Associate working at the intersection of Physics, AI, and High Performance Computing" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -39,13 +39,11 @@
 				<section id="intro" class="intro-section">
 				  <div class="overlay"></div>
 				  <div class="inner">
-				    <h1>Karthik Suresh</h1>
-				    <h2>Physics × Data Science</h2>
+				    <h1>{{intro.title}}</h1>
+				    <h2>{{intro.subtitle}}</h2>
 				
 				    <div class="intro-content">
-				      <p>I am a data physicist and optimization researcher, currently exploring the fascinating crossroads of <strong>AI</strong>, <strong>high-performance computing</strong>, and <strong>experimental physics</strong>. My work spans Bayesian optimization and adaptive experimentation for particle detector design, and developing grounded large language models to help scientists make sense of complex knowledge landscapes.</p>
-<p>As a Postdoctoral Research Associate in the Department of Data Science at the College of William and Mary, I build tools for experiments like GlueX and the upcoming Electron-Ion Collider — where the art of turning noisy, high-dimensional data into insight is both a science and a bit of an adventure.</p>
-
+				      {{{intro.content}}}
 				    </div>
 				
 				    <ul class="actions">
@@ -287,7 +285,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; 2024 Karthik Suresh. All rights reserved.</li>
+						<li>&copy; 2024 {{intro.title}}. All rights reserved.</li>
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						<li>Physics × Data Science × AI</li>
 					</ul>
