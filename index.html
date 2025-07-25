@@ -271,6 +271,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+			  window.addEventListener("scroll", () => {
+			    const overlay = document.querySelector(".intro-section .overlay");
+			    const scrollY = window.scrollY;
+			    const opacity = Math.min(0.4 + scrollY / 600, 0.85); // Max darkening
+			    overlay.style.background = `rgba(0, 0, 0, ${opacity})`;
+			  });
+			</script>
 	</body>
 </html>
