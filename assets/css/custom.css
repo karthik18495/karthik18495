@@ -34,12 +34,16 @@
 
 /* Enhanced intro section with JSA_profile.jpg background */
 #intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/JSA_profile.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../../images/JSA_profile.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
     position: relative;
+    min-height: 100vh;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #intro .overlay {
@@ -48,28 +52,52 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
+    transition: background 0.3s ease;
 }
 
 #intro .inner {
     position: relative;
     z-index: 2;
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #intro h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 700;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #intro h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 300;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     color: #f0f0f0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#intro .intro-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#intro .intro-content p {
+    margin-bottom: 1.5em;
 }
 
 /* Dark theme with gradient colors */

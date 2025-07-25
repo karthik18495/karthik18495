@@ -1,0 +1,21 @@
+{
+  "name": "karthik-portfolio",
+  "version": "1.0.0",
+  "description": "Modular markdown-driven personal website for Karthik Suresh",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && python3 -m http.server 8000",
+    "start": "npm run build && npm run dev"
+  },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.3",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {},
+  "keywords": ["portfolio", "physics", "data-science", "static-site"],
+  "author": "Karthik Suresh",
+  "license": "MIT"
+}
