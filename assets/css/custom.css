@@ -32,10 +32,29 @@
     margin: 0.5em 0;
 }
 
-/* Enhanced intro section with gradient background */
+/* Enhanced intro section with JSA_profile.jpg background */
 #intro {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/JSA_profile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
+    position: relative;
+}
+
+#intro .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#intro .inner {
+    position: relative;
+    z-index: 2;
 }
 
 #intro h1 {
@@ -53,27 +72,34 @@
     letter-spacing: 0.2em;
 }
 
-/* Physics-themed accent colors */
+/* Dark theme with gradient colors */
 .wrapper.style2 {
-    background-color: #f8f9fa;
-}
-
-.wrapper.style3 {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     color: white;
 }
 
+.wrapper.style3 {
+    background: linear-gradient(135deg, #0f3460 0%, #0e1a2e 100%);
+    color: white;
+}
+
+.wrapper.style2 h2,
+.wrapper.style2 h3,
 .wrapper.style3 h2,
 .wrapper.style3 h3 {
     color: white;
 }
 
-/* Enhanced project sections */
+/* Enhanced project sections with dark theme */
 .spotlights section .content .inner h2 {
-    color: #2a5298;
+    color: #6cc04a;
     border-bottom: 2px solid #6cc04a;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
+}
+
+.spotlights section .content .inner p {
+    color: #e0e0e0;
 }
 
 /* Skills section icons with physics theme */
@@ -158,4 +184,36 @@ body:not(.is-preload) #intro {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 1s ease, transform 1s ease;
+}
+
+/* News section styling */
+#news {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.news-timeline {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    border-left: 4px solid #6cc04a;
+}
+
+.timeline-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.timeline-list li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    border-left: 3px solid #667eea;
+    color: #e0e0e0;
+}
+
+.timeline-list li strong {
+    color: #6cc04a;
 }
