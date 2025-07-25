@@ -15,6 +15,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+	<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -307,6 +309,16 @@
 			    const opacity = Math.min(0.4 + scrollY / 600, 0.85); // Max darkening
 			    overlay.style.background = `rgba(0, 0, 0, ${opacity})`;
 			  });
+			</script>
+			<script>
+				function toggleSidebar() {
+					document.body.classList.toggle('sidebar-collapsed');
+				}
+
+				// Collapse sidebar by default on page load
+				window.addEventListener('DOMContentLoaded', () => {
+					document.body.classList.add('sidebar-collapsed');
+				});
 			</script>
 	</body>
 </html>

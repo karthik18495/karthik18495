@@ -3999,3 +3999,38 @@ input, select, textarea {
 	  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 	}
 	
+/* This is the existing CSS you provided; below is the added code for collapsible sidebar */
+
+	/* Collapsible sidebar styles */
+	body.sidebar-collapsed #sidebar {
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-in-out;
+	}
+
+	body.sidebar-collapsed #sidebar + #wrapper,
+	body.sidebar-collapsed #sidebar + #wrapper + #footer {
+	margin-left: 0;
+	transition: margin-left 0.3s ease-in-out;
+	}
+
+	/* Toggle button for collapsing */
+	.sidebar-toggle {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	z-index: 11000;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	border: none;
+	border-radius: 0.3em;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	font-size: 1em;
+	}
+
+	/* Optional: Only show toggle button when sidebar is present */
+	@media screen and (max-width: 1280px) {
+	.sidebar-toggle {
+		display: none;
+	}
+	}
