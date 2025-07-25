@@ -45,9 +45,9 @@ Intensive hands-on course focusing on Python programming for scientific applicat
 
 ## Workshops & Tutorials
 
-### Bayesian Optimization for Experimental Design
-**Next Session:** March 15-16, 2025  
-**Format:** 2-day intensive workshop  
+### Hamption University Graduate Summer (HUGS) Programme 2025 
+**Date:** May 27 - June 13, 2025  
+**Format:** 2 week day intensive workshop  
 **Location:** Jefferson Lab, Newport News, VA
 
 Comprehensive workshop on applying Bayesian optimization techniques to experimental design problems in physics. Participants will learn both theoretical foundations and practical implementation.
@@ -59,11 +59,11 @@ Comprehensive workshop on applying Bayesian optimization techniques to experimen
 - Constraint handling in experimental settings
 - Hands-on coding sessions with real detector data
 
-[Registration](https://example.com/bayesopt-workshop) | [Prerequisites](https://example.com/prereqs) | [Materials](https://github.com/karthik18495/bayesopt-workshop)
+[Workshop](https://example.com/bayesopt-workshop) | [Materials](https://cfteach.github.io/HUGS2025/intro.html)
 
 ---
 
-### Introduction to Machine Learning for Particle Physics
+### AID2E Summer Boot camp 2024
 **Format:** Self-paced online course  
 **Platform:** YouTube + GitHub  
 **Duration:** 8 hours of video content

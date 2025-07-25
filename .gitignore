@@ -28,3 +28,5 @@ temp/
 
 # Logs
 *.log
+
+*old_htmls/
