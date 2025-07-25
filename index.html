@@ -212,7 +212,7 @@
 
 				<!-- About -->
 					<section id="about" class="wrapper style2 fade-up">
-						<div class="inner"style="background: linear-gradient(135deg, #0d1b2a, #000814); padding: 2rem; border-radius: 0.5rem;">
+						<div class="inner">
 							<h2>About Me</h2>
 							<div class="split style1">
 								<section>
@@ -306,7 +306,7 @@
 			  window.addEventListener("scroll", () => {
 			    const overlay = document.querySelector(".intro-section .overlay");
 			    const scrollY = window.scrollY;
-			    const opacity = Math.min(0.4 + scrollY / 600, 0.85); // Max darkening
+			    const opacity = Math.min(0.1 + scrollY / 800, 0.4); // Lighter overlay with slower progression
 			    overlay.style.background = `rgba(0, 0, 0, ${opacity})`;
 			  });
 			</script>
