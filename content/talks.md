@@ -1,6 +1,6 @@
 ---
-title: "Latest News & Updates"
-description: "Stay updated with my latest talks, courses, publications, and research developments."
+title: "Talks and Lectures"
+description: "Stay updated with my talks, and courses."
 ---
 
 ## News and Updates

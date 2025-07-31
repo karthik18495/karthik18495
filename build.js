@@ -114,10 +114,10 @@ async function build() {
     await ensureTemplatesExist();
     
     // Generate detail pages
-    await generateDetailPage('news.html', 'Latest News', 'Recent updates and announcements');
+    await generateDetailPage('talks.html', 'Recent talks and Lectures', 'Recent talks, lectures, and presentations on AI and physics.');
     await generateDetailPage('papers.html', 'Publications', 'Research papers and publications');
-    await generateDetailPage('courses.html', 'Courses & Workshops', 'Educational content and tutorials');
-    
+    await generateDetailPage('other_projects.html', 'Other Projects', 'Other Personal Projects');
+
     // Update main index
     await updateMainIndex();
     
